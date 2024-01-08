@@ -72,3 +72,35 @@ body {
   margin: 0;
   color: #e44d26; /* Couleur du texte pour le compte à rebours du repos */
 }
+
+
+/* Ajoutez ces règles pour les petits écrans (par exemple, les mobiles) */
+@media only screen and (max-width: 600px) {
+  #timer {
+    margin-bottom: 10px;
+  }
+
+  #timer h1 {
+    font-size: 18px;
+  }
+
+  #timer-value {
+    font-size: 24px;
+  }
+
+  .exercice h2 {
+    font-size: 16px;
+  }
+
+  .exercice p {
+    font-size: 14px;
+  }
+
+  #repos-timer-value h2 {
+    font-size: 16px;
+  }
+
+  #repos-timer-value p {
+    font-size: 24px;
+  }
+}
