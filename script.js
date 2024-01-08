@@ -1,6 +1,6 @@
 function init() {
   var timerValue = document.getElementById("timer-value");
-  var currentLoopElement = document.getElementById("current-loop"); // New element to display current loop
+  var currentLoopElement = document.getElementById("current-loop");
   var interval;
 
   var exercices = document.getElementById("exercices");
@@ -9,8 +9,8 @@ function init() {
   var repeats = 12;
   var isRunning = false;
   var currentTime = 0;
-  var firstClick = true; // Variable to track the first click
-  var currentLoop = 1; // Variable to track the current loop
+  var firstClick = true;
+  var currentLoop = 1;
 
   function startTimer() {
     interval = setInterval(function () {
@@ -37,7 +37,7 @@ function init() {
         currentExercice = 0;
         repeats--;
         currentLoop++;
-        currentLoopElement.innerHTML = "Boucle " + currentLoop; // Update the HTML element with current loop
+        currentLoopElement.innerHTML = "Boucle " + currentLoop;
       } else {
         stopTimer();
         isRunning = false;
@@ -94,7 +94,8 @@ function init() {
   timerValue.innerHTML = formatTime(currentTime);
 
   window.addEventListener("click", function () {
-    showNextExercice();
+    // Commentez ou supprimez cette ligne pour désactiver le passage par clic
+    // showNextExercice();
   });
 
   var touchStartX = 0;
