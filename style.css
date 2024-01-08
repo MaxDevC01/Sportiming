@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  touch-action: manipulation;
   margin: 0;
   padding: 0;
   display: flex;

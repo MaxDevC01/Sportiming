@@ -96,6 +96,12 @@ function init() {
 
   window.addEventListener("click", function () {
     showNextExercice();
+  
+  });
+
+  window.addEventListener("touchstart", function (event) {
+    event.preventDefault();
+    showNextExercice();
   });
 }
 
