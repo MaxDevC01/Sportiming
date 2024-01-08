@@ -1,4 +1,3 @@
-
 function init() {
   var timerValue = document.getElementById("timer-value");
   var currentLoopElement = document.getElementById("current-loop"); // New element to display current loop
@@ -96,12 +95,22 @@ function init() {
 
   window.addEventListener("click", function () {
     showNextExercice();
-  
   });
 
+  var touchStartX = 0;
+  var touchEndX = 0;
+
   window.addEventListener("touchstart", function (event) {
-    event.preventDefault();
-    showNextExercice();
+    touchStartX = event.touches[0].clientX;
+  });
+
+  window.addEventListener("touchend", function (event) {
+    touchEndX = event.changedTouches[0].clientX;
+    var deltaX = touchEndX - touchStartX;
+
+    if (deltaX < -50) {
+      showNextExercice(); // Balayer vers la gauche
+    }
   });
 }
 
