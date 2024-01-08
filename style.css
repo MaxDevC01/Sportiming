@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+#timer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#timer h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+#timer-value {
+  font-size: 36px;
+  margin: 0;
+}
+
+#exercices {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exercice {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.exercice img {
+  max-width: 300px; /* Fixed width of 300px */
+  max-height: 300px; /* Fixed height of 300px */
+  margin-bottom: 10px;
+}
+
+.exercice h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.exercice p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.repetitions {
+  font-weight: bold;
+  color: #007bff; /* Couleur du texte pour les répétitions */
+}
+
+#repos-timer-value {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#repos-timer-value h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+#repos-timer-value p {
+  font-size: 36px;
+  margin: 0;
+  color: #e44d26; /* Couleur du texte pour le compte à rebours du repos */
+}
